@@ -1,0 +1,139 @@
+body {
+    background-color:#a5c0db;
+}
+#landscape {
+    background-image: url(imajes/winter-landscape-2995987_1920.jpg);
+}
+.overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+}
+#snow .flake {
+    background:radial-gradient(#ffffff,
+        #99d3ee81,
+        #69747400 100%); 
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    animation: fall 10s linear infinite;
+    border-radius: 100%;
+    top: -20%;
+    font-size: 0;
+}
+#snow .flake.md {
+    animation: fall 15s linear infinite;
+    width: 12px;
+    height: 12px;   
+}
+#snow .flake:nth-child(1) {
+    left: 10%;
+    animation-delay: 1s;
+}
+#snow .flake:nth-child(2) {
+    left: 15%;
+    animation-delay: 2s;
+}
+#snow .flake:nth-child(3) {
+    left: 35%;
+    animation-delay: 3s;
+}
+#snow .flake:nth-child(4) {
+    left: 20%;
+    animation-delay: 4s;
+}
+#snow .flake:nth-child(5) {
+    left: 55%;
+    animation-delay: 5s;
+}
+#snow .flake:nth-child(6) {
+    left: 30%;
+    animation-delay: 6s;
+}
+#snow .flake:nth-child(7) {
+    left: 75%;
+    animation-delay: 7s;
+}
+#snow .flake:nth-child(8) {
+    left: 85%;
+    animation-delay: 8s;
+}
+#snow .flake:nth-child(9) {
+    left: 65%;
+    animation-delay: 9s;
+}
+#snow .flake:nth-child(10) {
+    left: 95%;
+    animation-delay: 10s;
+}
+#snow .flake.md:nth-child(11) {
+    left: 40%;
+    animation-delay: 3.5s;
+}
+#snow .flake.md:nth-child(12) {
+    left: 90%;
+    animation-delay: 2.5s;
+}
+#snow .flake.md:nth-child(13) {
+    left: 87%;
+    animation-delay: 1.5s;
+}
+#snow .flake.md:nth-child(14) {
+    left: 50%;
+    animation-delay: 5.5s;
+}
+#snow .flake.md:nth-child(15) {
+    left:  80%;
+    animation-delay: 4.5s;
+}
+#snow .flake.md:nth-child(16) {
+    left:  5%;
+    animation-delay: 6.5s;
+}
+#snow .flake.md:nth-child(17) {
+    left:  60%;
+    animation-delay: 7.5s;
+}
+#snow .flake.md:nth-child(18) {
+    left: 25%;
+    animation-delay: 8.5s;
+}
+#snow .flake.md:nth-child(19) {
+    left:  70%;
+    animation-delay: 9.5s;
+}
+#snow .flake.md:nth-child(20) {
+    left:  5%;
+    animation-delay: 7s;
+}
+@keyframes fall {
+    from { top: -20%;}
+    to   {top: 100%;}
+}
+.menu {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(122, 148, 172);
+    top: 0;
+    left: 0;
+    display: grid;
+}
+.menu li {
+display: table-cell;
+width: 20%;
+color: #f6f2f2;
+font-size: 2em;
+}
+.form {
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   background-color: azure;
+   border-radius: 10px;
+   text-align: center;
+}
+.form img {
+    height: 200px;
+}
